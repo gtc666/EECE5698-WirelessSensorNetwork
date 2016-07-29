@@ -1,0 +1,12 @@
+y1 = load('resultDelay(a).txt');
+y2 = load('resultDelay(b).txt');
+x = 1:20;
+%figure(2);
+%plot(x,y1);
+figure(4);
+plot(x,y1,'-ob',x,y2,'-b');
+xlabel('pairs','FontSize',13);
+ylabel({'Delay', '(ms)'},'FontSize',13);
+title('End-To-End Delay vs Number of pairs','FontSize',15);
+%legend('500Bytes RTS/CTS enabled');
+legend('500Bytes RTS/CTS enabled', '500Bytes RTS/CTS disabled');
